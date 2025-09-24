@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Website - Web Umum & Spesifik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Penjualan Website</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pricing.html">Harga</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Daftar</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Penjualan Website</h1>
+            <p>Jual berbagai macam website umum dan opsi untuk website spesifik sesuai kebutuhan Anda.</p>
+        </div>
+    </header>
+
+    <section id="web-umum">
+        <h2>Website Umum</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Blog Pribadi</h3>
+                <p>Website blog sederhana untuk berbagi cerita dan artikel. Termasuk desain responsif dan fitur komentar.</p>
+                <p class="price">Rp 500.000</p>
+                <button class="btn" onclick="beli('Blog Pribadi')">Beli Sekarang</button>
+            </div>
+            <div class="card">
+                <h3>Portfolio</h3>
+                <p>Tampilkan karya dan pengalaman Anda dengan desain profesional. Cocok untuk freelancer dan seniman.</p>
+                <p class="price">Rp 750.000</p>
+                <button class="btn" onclick="beli('Portfolio')">Beli Sekarang</button>
+            </div>
+            <div class="card">
+                <h3>Toko Online</h3>
+                <p>Website e-commerce lengkap dengan keranjang belanja dan integrasi pembayaran.</p>
+                <p class="price">Rp 1.500.000</p>
+                <button class="btn" onclick="beli('Toko Online')">Beli Sekarang</button>
+            </div>
+            <div class="card">
+                <h3>Website Bisnis</h3>
+                <p>Halaman perusahaan dengan informasi layanan, kontak, dan galeri. Meningkatkan kredibilitas bisnis Anda.</p>
+                <p class="price">Rp 1.000.000</p>
+                <button class="btn" onclick="beli('Website Bisnis')">Beli Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="web-spesifik">
+        <h2>Website Spesifik</h2>
+        <p>Butuh website khusus? Isi formulir di bawah untuk permintaan kustom.</p>
+        <form id="form-spesifik">
+            <label for="nama">Nama Anda:</label>
+            <input type="text" id="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="jenis">Jenis Website:</label>
+            <select id="jenis">
+                <option value="e-learning">E-Learning</option>
+                <option value="forum">Forum Komunitas</option>
+                <option value="booking">Sistem Booking</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+
+            <label for="fitur">Fitur yang Dibutuhkan:</label>
+            <textarea id="fitur" placeholder="Deskripsikan fitur yang Anda inginkan..."></textarea>
+
+            <label for="budget">Budget (Rp):</label>
+            <input type="number" id="budget" min="0">
+
+            <button type="submit" class="btn">Kirim Permintaan</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="content">
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="index.html">Website Umum</a></li>
+                        <li><a href="index.html">Website Custom</a></li>
+                        <li><a href="services.html">Konsultasi</a></li>
+                        <li><a href="services.html">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="privacy.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informasi</h4>
+                    <ul>
+                        <li><a href="pricing.html">Harga</a></li>
+                        <li><a href="testimonials.html">Testimonial</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2023 Penjualan Website. Semua hak dilindungi.</p>
+            <p>Kontak: email@example.com | Tel: 08123456789</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - Penjualan Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Penjualan Website</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pricing.html">Harga</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>Daftar Akun</h1>
+                    <p>Buat akun baru untuk memulai project website Anda</p>
+                </div>
+
+                <form id="signup-form" class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">Nama Depan</label>
+                            <input type="text" id="first-name" name="firstName" required placeholder="Nama depan">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Nama Belakang</label>
+                            <input type="text" id="last-name" name="lastName" required placeholder="Nama belakang">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" required placeholder="Masukkan email Anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-phone">Nomor Telepon</label>
+                        <input type="tel" id="signup-phone" name="phone" required placeholder="Contoh: 08123456789">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company-name">Nama Perusahaan/Organisasi</label>
+                        <input type="text" id="company-name" name="company" placeholder="Opsional">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" required placeholder="Minimal 8 karakter">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Konfirmasi Password</label>
+                        <input type="password" id="confirm-password" name="confirmPassword" required placeholder="Ulangi password">
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            Saya menyetujui <a href="terms.html">Syarat & Ketentuan</a> dan <a href="privacy.html">Kebijakan Privasi</a>
+                        </label>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter">
+                            Saya ingin menerima update dan promo melalui email
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Daftar Sekarang</button>
+
+                    <div class="auth-divider">
+                        <span>atau</span>
+                    </div>
+
+                    <button type="button" class="btn btn-google">
+                        <span class="google-icon">G</span>
+                        Daftar dengan Google
+                    </button>
+
+                    <div class="auth-footer">
+                        <p>Sudah punya akun? <a href="login.html">Masuk sekarang</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="content">
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="index.html">Website Umum</a></li>
+                        <li><a href="index.html">Website Custom</a></li>
+                        <li><a href="services.html">Konsultasi</a></li>
+                        <li><a href="services.html">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="privacy.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2023 Penjualan Website. Semua hak dilindungi.</p>
+            <p>Kontak: email@example.com | Tel: 08123456789</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Signup form handler
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const email = document.getElementById('signup-email').value;
+            const phone = document.getElementById('signup-phone').value;
+            const password = document.getElementById('signup-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const termsAccepted = document.querySelector('input[name="terms"]').checked;
+
+            // Validation
+            if (!firstName || !lastName || !email || !phone || !password || !confirmPassword) {
+                alert('Mohon lengkapi semua field yang wajib diisi');
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                alert('Format email tidak valid');
+                return;
+            }
+
+            if (!isValidPhone(phone)) {
+                alert('Format nomor telepon tidak valid');
+                return;
+            }
+
+            if (password.length < 8) {
+                alert('Password minimal 8 karakter');
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Konfirmasi password tidak cocok');
+                return;
+            }
+
+            if (!termsAccepted) {
+                alert('Mohon setujui syarat dan ketentuan terlebih dahulu');
+                return;
+            }
+
+            // Simulate signup process
+            alert(`Pendaftaran berhasil!\nNama: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\n\nAkun Anda telah dibuat. Silakan login untuk melanjutkan.`);
+
+            // Reset form
+            this.reset();
+        });
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function isValidPhone(phone) {
+            const phoneRegex = /^08[0-9]{8,11}$/;
+            return phoneRegex.test(phone);
+        }
+    </script>
+</body>
+</html>

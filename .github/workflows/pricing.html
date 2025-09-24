@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harga - Penjualan Website</title>
+    <link rel="stylesheet" href="style-tech.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Penjualan Website</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pricing.html" class="active">Harga</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1>Harga Layanan</h1>
+        <p>Pilih paket yang sesuai dengan kebutuhan dan budget Anda. Semua harga sudah include PPN.</p>
+
+        <section>
+            <h2>Paket Website Siap Pakai</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Paket Basic</h3>
+                    <p class="price">Rp 2.000.000</p>
+                    <ul>
+                        <li>5 Halaman Website</li>
+                        <li>Design Responsif</li>
+                        <li>Free Domain .com (1 tahun)</li>
+                        <li>Hosting 1 GB (1 tahun)</li>
+                        <li>Email Business (5 akun)</li>
+                        <li>SSL Certificate</li>
+                        <li>Support 6 bulan</li>
+                        <li>Training cara update konten</li>
+                    </ul>
+                    <button class="btn" onclick="beli('Paket Basic - Rp 2.000.000')">Pesan Sekarang</button>
+                </div>
+                <div class="feature-card">
+                    <h3>Paket Professional</h3>
+                    <p class="price">Rp 5.000.000</p>
+                    <ul>
+                        <li>Unlimited Halaman</li>
+                        <li>Design Premium Custom</li>
+                        <li>Free Domain .com (1 tahun)</li>
+                        <li>Hosting 5 GB (1 tahun)</li>
+                        <li>Email Business (Unlimited)</li>
+                        <li>SSL Certificate</li>
+                        <li>CMS System</li>
+                        <li>SEO Optimization</li>
+                        <li>Google Analytics Setup</li>
+                        <li>Support 1 tahun</li>
+                        <li>Maintenance 3 bulan</li>
+                    </ul>
+                    <button class="btn" onclick="beli('Paket Professional - Rp 5.000.000')">Pesan Sekarang</button>
+                </div>
+                <div class="feature-card">
+                    <h3>Paket Enterprise</h3>
+                    <p class="price">Rp 10.000.000</p>
+                    <ul>
+                        <li>Website Full Custom</li>
+                        <li>Design Exclusive</li>
+                        <li>Free Domain Premium (1 tahun)</li>
+                        <li>Hosting Unlimited (1 tahun)</li>
+                        <li>Email Business (Unlimited)</li>
+                        <li>SSL Certificate Premium</li>
+                        <li>Database Integration</li>
+                        <li>Admin Dashboard</li>
+                        <li>API Integration</li>
+                        <li>SEO & Performance Opt.</li>
+                        <li>Support 2 tahun</li>
+                        <li>Maintenance 6 bulan</li>
+                    </ul>
+                    <button class="btn" onclick="beli('Paket Enterprise - Rp 10.000.000')">Pesan Sekarang</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Paket E-commerce</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Toko Online Starter</h3>
+                    <p class="price">Rp 3.500.000</p>
+                    <ul>
+                        <li>Website Toko Online</li>
+                        <li>Produk hingga 50 items</li>
+                        <li>Keranjang Belanja</li>
+                        <li>Payment Gateway</li>
+                        <li>Sistem Inventory</li>
+                        <li>Design Responsif</li>
+                        <li>Free Domain & Hosting</li>
+                        <li>Support 1 tahun</li>
+                    </ul>
+                    <button class="btn" onclick="beli('Toko Online Starter - Rp 3.500.000')">Pesan Sekarang</button>
+                </div>
+                <div class="feature-card">
+                    <h3>Toko Online Pro</h3>
+                    <p class="price">Rp 7.500.000</p>
+                    <ul>
+                        <li>Website E-commerce Lengkap</li>
+                        <li>Unlimited Produk</li>
+                        <li>Multi Payment Gateway</li>
+                        <li>Sistem Inventory Advanced</li>
+                        <li>Laporan Penjualan</li>
+                        <li>Admin Dashboard</li>
+                        <li>SEO Optimization</li>
+                        <li>Support 1 tahun</li>
+                        <li>Maintenance 6 bulan</li>
+                    </ul>
+                    <button class="btn" onclick="beli('Toko Online Pro - Rp 7.500.000')">Pesan Sekarang</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Layanan Tambahan</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Copywriting</h3>
+                    <p class="price">Rp 500.000</p>
+                    <p>Pembuatan konten website profesional</p>
+                    <small>Per halaman</small>
+                </div>
+                <div class="feature-card">
+                    <h3>Photography</h3>
+                    <p class="price">Rp 1.000.000</p>
+                    <p>Sesi foto produk/company</p>
+                    <small>1 hari shooting</small>
+                </div>
+                <div class="feature-card">
+                    <h3>Logo Design</h3>
+                    <p class="price">Rp 750.000</p>
+                    <p>Desain logo profesional</p>
+                    <small>3 konsep + revisi</small>
+                </div>
+                <div class="feature-card">
+                    <h3>SEO Setup</h3>
+                    <p class="price">Rp 1.500.000</p>
+                    <p>Optimasi SEO lengkap</p>
+                    <small>Keyword research + on-page SEO</small>
+                </div>
+                <div class="feature-card">
+                    <h3>Google Ads</h3>
+                    <p class="price">Rp 2.000.000</p>
+                    <p>Setup campaign iklan</p>
+                    <small>Budget iklan terpisah</small>
+                </div>
+                <div class="feature-card">
+                    <h3>Maintenance</h3>
+                    <p class="price">Rp 300.000</p>
+                    <p>Maintenance bulanan</p>
+                    <small>Update konten + backup</small>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Biaya Domain & Hosting</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Domain</h3>
+                    <ul>
+                        <li>.com - Rp 150.000/tahun</li>
+                        <li>.id - Rp 300.000/tahun</li>
+                        <li>.co.id - Rp 400.000/tahun</li>
+                        <li>.org - Rp 200.000/tahun</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Hosting</h3>
+                    <ul>
+                        <li>Basic (1GB) - Rp 300.000/tahun</li>
+                        <li>Standard (5GB) - Rp 600.000/tahun</li>
+                        <li>Premium (Unlimited) - Rp 1.200.000/tahun</li>
+                        <li>VPS - Rp 2.000.000/tahun</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proses Pembayaran</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Cara Pembayaran</h3>
+                    <ul>
+                        <li>Transfer Bank (BCA, BNI, Mandiri)</li>
+                        <li>E-wallet (GoPay, OVO, Dana)</li>
+                        <li>Kartu Kredit (Visa, Mastercard)</li>
+                        <li>Cicilan (0% interest 3-6 bulan)</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Sistem Pembayaran</h3>
+                    <ul>
+                        <li>50% DP di awal project</li>
+                        <li>25% setelah design approval</li>
+                        <li>25% setelah website selesai</li>
+                        <li>Pelunasan sebelum deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Garansi & Refund</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Garansi</h3>
+                    <ul>
+                        <li>Garansi bug fixing 6 bulan</li>
+                        <li>Garansi maintenance 1 tahun</li>
+                        <li>Support 24/7 via WhatsApp</li>
+                        <li>Backup data rutin</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Kebijakan Refund</h3>
+                    <ul>
+                        <li>Refund 50% jika cancel sebelum design</li>
+                        <li>Refund 25% jika cancel setelah design</li>
+                        <li>Tidak ada refund setelah development</li>
+                        <li>Proses refund 7-14 hari kerja</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Promo & Diskon</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Diskon Spesial</h3>
+                    <ul>
+                        <li>Diskon 10% untuk pembayaran penuh</li>
+                        <li>Diskon 15% untuk repeat order</li>
+                        <li>Diskon 20% untuk referral berhasil</li>
+                        <li>Promo bundling domain + hosting</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Paket Hemat</h3>
+                    <ul>
+                        <li>Website + Domain + Hosting: Rp 2.200.000</li>
+                        <li>E-commerce + Marketing Kit: Rp 8.000.000</li>
+                        <li>Company Profile + SEO: Rp 5.500.000</li>
+                        <li>Custom Website + Maintenance: Rp 11.000.000</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="content">
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="index.html">Website Umum</a></li>
+                        <li><a href="index.html">Website Custom</a></li>
+                        <li><a href="services.html">Konsultasi</a></li>
+                        <li><a href="services.html">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="privacy.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2023 Penjualan Website. Semua hak dilindungi.</p>
+            <p>Kontak: email@example.com | Tel: 08123456789</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

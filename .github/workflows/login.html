@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Penjualan Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Penjualan Website</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="pricing.html">Harga</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>Login</h1>
+                    <p>Masuk ke akun Anda untuk melanjutkan</p>
+                </div>
+
+                <form id="login-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" required placeholder="Masukkan email Anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" required placeholder="Masukkan password Anda">
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember"> Ingat saya
+                        </label>
+                        <a href="#" class="forgot-password">Lupa password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Masuk</button>
+
+                    <div class="auth-divider">
+                        <span>atau</span>
+                    </div>
+
+                    <button type="button" class="btn btn-google">
+                        <span class="google-icon">G</span>
+                        Masuk dengan Google
+                    </button>
+
+                    <div class="auth-footer">
+                        <p>Belum punya akun? <a href="signup.html">Daftar sekarang</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="content">
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="index.html">Website Umum</a></li>
+                        <li><a href="index.html">Website Custom</a></li>
+                        <li><a href="services.html">Konsultasi</a></li>
+                        <li><a href="services.html">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="privacy.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2023 Penjualan Website. Semua hak dilindungi.</p>
+            <p>Kontak: email@example.com | Tel: 08123456789</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Login form handler
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            // Basic validation
+            if (!email || !password) {
+                alert('Mohon lengkapi semua field');
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                alert('Format email tidak valid');
+                return;
+            }
+
+            // Simulate login process
+            alert(`Login berhasil!\nEmail: ${email}\n\nFitur login akan diintegrasikan dengan backend.`);
+
+            // Reset form
+            this.reset();
+        });
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+</html>
